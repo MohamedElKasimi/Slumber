@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/slumber/static/css/main.c1222a65.css",
+    "main.js": "/slumber/static/js/main.4566aaa9.js",
+    "static/js/787.d7f93384.chunk.js": "/slumber/static/js/787.d7f93384.chunk.js",
+    "index.html": "/slumber/index.html",
+    "main.c1222a65.css.map": "/slumber/static/css/main.c1222a65.css.map",
+    "main.4566aaa9.js.map": "/slumber/static/js/main.4566aaa9.js.map",
+    "787.d7f93384.chunk.js.map": "/slumber/static/js/787.d7f93384.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1222a65.css",
+    "static/js/main.4566aaa9.js"
+  ]
+}
