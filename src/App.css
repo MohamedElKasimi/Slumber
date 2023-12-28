@@ -1,0 +1,260 @@
+.Backdrop {
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  background: #0c1445;
+  background: linear-gradient(180deg, rgba(12,20,69,1) 0%, rgba(3,5,15,1) 52%, rgba(0,0,0,1) 100%);
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.moon{
+  display: inline-block;
+  position:fixed;
+  left: 100px;
+}
+
+.star{
+  display: inline-block;
+  position:absolute;
+}
+
+.cloud{
+  position:fixed;  
+  margin:auto;
+  top: 2%;
+  left: 8%;
+  right:0;
+  width: 50%;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.form{
+  position:absolute;  
+  margin:auto;
+  left:35%;
+  top: 35%;
+  width: 450px;
+  height: 175px;
+  background-color: transparent;
+}
+
+button{
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #070d34;
+  border-radius: 50px;
+  border: 0px;
+  padding: 12.5px 60px;
+  transition: 0.2s;
+  position: absolute;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+button:active{
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #ffff00;
+  color: #070d34;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: #ffff00;
+  color: #070d34;
+  font-weight: bold;
+}
+
+.sleep-time{
+  margin-top: 20px;
+}
+.wake-time{
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.meridiem{
+  font-size: 10px;
+  display: inline-block;
+  position: absolute;
+  padding :10px;
+  width:40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  right: 0;
+}
+.am{
+  top: 25%;
+}
+
+.pm{
+  bottom: 25%;
+}
+
+.box{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 33%;
+  background-color: transparent;
+}
+
+input[type=time] {
+  padding: 5px 1px;
+  background-color: #070d34;
+  margin: 0;
+  border-radius: 100px;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: none;
+  color: #ffff00;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;;
+  width: 100%;
+}
+
+.calculate{
+  padding: 10px 25px;
+  margin: 0;
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+}
+
+.calculate:active{
+  font-weight: normal;
+}
+
+.oc_background{
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal{
+  width: clamp(50%, 700px, 90%);
+  height: 500px;
+  background-color: #0b1343;
+  z-index: 200;
+  position: absolute;
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  border: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-header{
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+  color: #ffff00;
+}
+
+.sleepy-fella{
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  height: 10%;
+  width: 10%;
+}
+.time-box{
+  width: 100%
+}
+
+.sub-optimal{
+  display: inline-block;
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  background: #070d34;
+  margin: 8px;
+  font-size: 25px;
+  color: #ffff00;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #ffff00 ;
+}
+
+.optimal{
+  display: inline-block;
+  width: max-content;
+  height: max-content;
+  padding: 25px;
+  background: #070d34;
+  margin: 10px;
+  font-size: 25px;
+  color: #ffff00;
+  border: 2px solid #ffff00 ;
+  border-radius: 10px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.summary{
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  right: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  padding-top: 10px;
+  text-align: center;
+  color: #ffff00;
+  font-size: large;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100vw;
+  background-color: transparent ;
+}
+
+.logo{
+  font-size: 5rem;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 20px;
+  user-select: none;
+  color: #ffff00;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+}
+.desc{
+  position: absolute;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  color: white;
+  margin: 0px 100px;
+  bottom: 5px;
+}
